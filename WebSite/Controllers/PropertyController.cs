@@ -7,8 +7,9 @@ namespace WebSite.Controllers
 	{
 		public IActionResult Create()
 		{
-			return View();
-		}
+            var model = new Property();
+            return View(model);
+        }
 
 		[HttpPost]
 		public IActionResult Create(Property model)

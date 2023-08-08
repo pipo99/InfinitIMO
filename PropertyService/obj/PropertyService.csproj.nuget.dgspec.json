@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\InfinitIMO\\PropertyService\\PropertyService.csproj": {}
+    "D:\\Github\\InfinitIMO\\InfinitIMO\\PropertyService\\PropertyService.csproj": {}
   },
   "projects": {
-    "D:\\Github\\InfinitIMO\\PropertyService\\PropertyService.csproj": {
+    "D:\\Github\\InfinitIMO\\InfinitIMO\\PropertyService\\PropertyService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\InfinitIMO\\PropertyService\\PropertyService.csproj",
+        "projectUniqueName": "D:\\Github\\InfinitIMO\\InfinitIMO\\PropertyService\\PropertyService.csproj",
         "projectName": "PropertyService",
-        "projectPath": "D:\\Github\\InfinitIMO\\PropertyService\\PropertyService.csproj",
+        "projectPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\PropertyService\\PropertyService.csproj",
         "packagesPath": "C:\\Users\\Marcio.Borges\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\InfinitIMO\\PropertyService\\obj\\",
+        "outputPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\PropertyService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

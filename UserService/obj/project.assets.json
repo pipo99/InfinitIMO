@@ -12178,11 +12178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\InfinitIMO\\UserService\\UserService.csproj",
+      "projectUniqueName": "D:\\Github\\InfinitIMO\\InfinitIMO\\UserService\\UserService.csproj",
       "projectName": "UserService",
-      "projectPath": "D:\\Github\\InfinitIMO\\UserService\\UserService.csproj",
+      "projectPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\UserService\\UserService.csproj",
       "packagesPath": "C:\\Users\\Marcio.Borges\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\InfinitIMO\\UserService\\obj\\",
+      "outputPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\UserService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

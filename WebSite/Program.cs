@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebSite.Areas.Identity.Data;
 using WebSite.Data;
+using WebSite.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,12 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
     options.SignIn.RequireConfirmedAccount = true;
 })
 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<PropertyService>();
+
 
 builder.Services.AddRazorPages();
 

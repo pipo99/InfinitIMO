@@ -12178,11 +12178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\InfinitIMO\\InquiryService\\InquiryService.csproj",
+      "projectUniqueName": "D:\\Github\\InfinitIMO\\InfinitIMO\\InquiryService\\InquiryService.csproj",
       "projectName": "InquiryService",
-      "projectPath": "D:\\Github\\InfinitIMO\\InquiryService\\InquiryService.csproj",
+      "projectPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\InquiryService\\InquiryService.csproj",
       "packagesPath": "C:\\Users\\Marcio.Borges\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\InfinitIMO\\InquiryService\\obj\\",
+      "outputPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\InquiryService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

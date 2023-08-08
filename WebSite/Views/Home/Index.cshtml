@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "InfinitIMO - Página inicial";
+﻿@model List<Property>
+
+@{
+    ViewData["Title"] = "Lista de Propriedades";
 }
 
 <div class="text-center">
     <h1 class="display-4">InfinitIMO</h1>
     <p>Real Estate Property Management System</p>
 </div>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th></th> 
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Localização</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var property in Model)
+        {
+            <tr>
+                <td><img src="https://picsum.photos/seed/@Guid.NewGuid()/150/150" alt="Imagem Aleatória" /></td> <!-- Imagem aleatória -->
+                <td>@property.Name</td>
+                <td>@property.Type</td>
+                <td>@property.Location</td>
+                <td>@property.Price</td>
+                <td>@property.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>

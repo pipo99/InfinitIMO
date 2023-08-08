@@ -12178,11 +12178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\InfinitIMO\\WebSite\\WebSite.csproj",
+      "projectUniqueName": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\WebSite.csproj",
       "projectName": "WebSite",
-      "projectPath": "D:\\Github\\InfinitIMO\\WebSite\\WebSite.csproj",
+      "projectPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\WebSite.csproj",
       "packagesPath": "C:\\Users\\Marcio.Borges\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\InfinitIMO\\WebSite\\obj\\",
+      "outputPath": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iwrsjF9+pbigAQgHzbYqbmTqtXA4J2bx5h8nrUJuWOm6Y6GyleIHglOrisFJudCF0XheNvUL4tGkUhAh+QohUg==",
+  "dgSpecHash": "j/yBnYx7rn2zvq5Re/c85jy1/cvspITbA9oQqpUJQ+FdKE6WvmjjGi/Kr7NU5O6KXiFwXnomYm4Z7gXE1Y78Zw==",
   "success": true,
-  "projectFilePath": "D:\\Github\\InfinitIMO\\UserService\\UserService.csproj",
+  "projectFilePath": "D:\\Github\\InfinitIMO\\InfinitIMO\\UserService\\UserService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcio.Borges\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Marcio.Borges\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

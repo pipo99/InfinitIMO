@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SJGhbuVhd5Unf9TjpMjfDg/BOvECxGkxs9Ea+EdPMozjpyae/o/Kbyv6lIKumcOdwAqxOheTP0ZHfrwchOEsCQ==",
+  "dgSpecHash": "jc7Dn+uj0I2PszHLriKSMgA06BjRNQw2hdmjbF9CnV8e6X5fykgUUwAtHZC9wx1GvwPxdHivo6RIkZurIIdXXw==",
   "success": true,
-  "projectFilePath": "D:\\Github\\InfinitIMO\\InquiryService\\InquiryService.csproj",
+  "projectFilePath": "D:\\Github\\InfinitIMO\\InfinitIMO\\InquiryService\\InquiryService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcio.Borges\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Marcio.Borges\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,21 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebSite.Models;
+using WebSite.Services;
 
 namespace WebSite.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly PropertyService _propertyService;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, PropertyService propertyService)
         {
             _logger = logger;
+            _propertyService = propertyService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            List<Property> properties  = await _propertyService.GetPropertiesAsync();
+            return View(properties);
         }
 
         public IActionResult Privacy()

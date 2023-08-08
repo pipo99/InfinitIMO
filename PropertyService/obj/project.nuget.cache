@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "abnK886yeRhKxIRyj3Qe0feAxmbFIXzdIHslW+/lDBa3X0XMBKBtB0FXvlsBIeacmhtT5rK6uv12tr41q35otw==",
+  "dgSpecHash": "jZTHNCyq8KFVqS86AECJ1VFyepZQO+J6hC0wWHuBxPCmWYbU74UuC0RczPNjkyGdezA6+y9Z6c4hMI5iV4+YJw==",
   "success": true,
-  "projectFilePath": "D:\\Github\\InfinitIMO\\PropertyService\\PropertyService.csproj",
+  "projectFilePath": "D:\\Github\\InfinitIMO\\InfinitIMO\\PropertyService\\PropertyService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcio.Borges\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Marcio.Borges\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
