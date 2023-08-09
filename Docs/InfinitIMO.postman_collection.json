@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "23477564-f333-49e5-8ee9-768bf98e6225",
+		"name": "InfinitIMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21689331"
+	},
+	"item": [
+		{
+			"name": "Property Service",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Property",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Property/50",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Property",
+								"50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Moradia a venda em Figueiró dos Vinhos\",\r\n  \"type\": \"Moradia T4\",\r\n  \"location\": \"Aguda, Figueiró dos Vinhos\",\r\n  \"price\": 125000,\r\n  \"description\": \"Venha conhecer a moradia dos seus sonhos!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7143/api/Property",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\":51,  \r\n  \"name\": \"Moradia a venda em Figueiró dos Vinhos-ALTERADA\",\r\n  \"type\": \"Moradia T4\",\r\n  \"location\": \"Aguda, Figueiró dos Vinhos\",\r\n  \"price\": 125000,\r\n  \"description\": \"Venha conhecer a moradia dos seus sonhos!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7143/api/Property/51",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Property",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Property/52",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Property",
+								"52"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inquiry Service",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7041/api/Inquiry",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7041",
+							"path": [
+								"api",
+								"Inquiry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"2023-08-09\",\r\n  \"propertyID\": 123,\r\n  \"email\": \"john.doe@example.com\",\r\n  \"name\": \"John Doe\",\r\n  \"message\": \"I'm interested in this property. Can you provide more details?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7041/api/Inquiry",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7041",
+							"path": [
+								"api",
+								"Inquiry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7041/api/Inquiry/22",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7041",
+							"path": [
+								"api",
+								"Inquiry",
+								"22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -86,19 +86,27 @@ namespace PropertyService.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdatePropertyAsync(Property property)
+        public async Task<Property> UpdatePropertyAsync(Property property)
         {
             _context.Entry(property).State = EntityState.Modified;
             await _context.SaveChangesAsync();
+
+            return property;
         }
 
-        public async Task DeletePropertyAsync(int id)
+        public async Task<bool> DeletePropertyAsync(int id)
         {
             var property = await _context.Properties.FindAsync(id);
+
             if (property != null)
             {
                 _context.Properties.Remove(property);
                 await _context.SaveChangesAsync();
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

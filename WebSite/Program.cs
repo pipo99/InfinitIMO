@@ -1,9 +1,8 @@
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using System.Configuration;
 using WebSite.Areas.Identity.Data;
 using WebSite.Data;
+using WebSite.Models;
 using WebSite.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,7 +21,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<PropertyService>();
 builder.Services.AddScoped<InquiryService>();
-
+ 
 
 builder.Services.AddRazorPages();
 

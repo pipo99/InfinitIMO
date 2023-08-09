@@ -6,16 +6,18 @@ namespace WebSite.Services
 {
     public class PropertyService
     {
+        private readonly ApiSettings _apiSettings;
         private readonly HttpClient _httpClient;
 
-        public PropertyService(HttpClient httpClient)
+        public PropertyService(IConfiguration configuration, HttpClient httpClient)
         {
+            _apiSettings = configuration.GetSection("ApiSettings").Get<ApiSettings>();
             _httpClient = httpClient;
         }
 
         public async Task<List<Property>> GetPropertiesAsync()
         {
-            var response = await _httpClient.GetAsync("https://localhost:7143/api/Property");
+            var response = await _httpClient.GetAsync($"{_apiSettings.PropertyAPIURL}/api/Property");
 
             if (response.IsSuccessStatusCode)
             {
@@ -28,7 +30,7 @@ namespace WebSite.Services
         }
         public async Task<Property> GetPropertyByIdAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"https://localhost:7143/api/Property/{id}");
+            var response = await _httpClient.GetAsync($"{_apiSettings.PropertyAPIURL}/api/Property/{id}");
 
             if (response.IsSuccessStatusCode)
             {
@@ -45,7 +47,7 @@ namespace WebSite.Services
             var serializedProperty = JsonConvert.SerializeObject(property);
             var content = new StringContent(serializedProperty, Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PostAsync("https://localhost:7143/api/Property", content);
+            var response = await _httpClient.PostAsync($"{_apiSettings.PropertyAPIURL}/api/Property", content);
 
             if (response.IsSuccessStatusCode)
                 return true;

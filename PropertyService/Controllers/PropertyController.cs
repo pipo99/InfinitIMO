@@ -85,9 +85,14 @@ namespace PropertyService.Controllers
                 return BadRequest();
             }
 
-            await _propertyService.UpdatePropertyAsync(property);
+            Property updatedProperty = await _propertyService.UpdatePropertyAsync(property);
 
-            return NoContent();
+            if (updatedProperty == null)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
+            return Ok(updatedProperty); 
         }
 
         /// <summary>
@@ -99,10 +104,18 @@ namespace PropertyService.Controllers
         /// <param name="id">The ID of the property to be deleted.</param>
         [Produces("application/json")]
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteProperty(int id)
+        public async Task<ActionResult<bool>> DeleteProperty(int id)
         {
-            await _propertyService.DeletePropertyAsync(id);
-            return NoContent();
+            bool deleted = await _propertyService.DeletePropertyAsync(id);
+
+            if (deleted)
+            {
+                return Ok(true);
+            }
+            else
+            {
+                return NotFound(false);
+            }
         }
     }
 }
