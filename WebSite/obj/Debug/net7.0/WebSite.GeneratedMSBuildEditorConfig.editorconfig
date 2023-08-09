@@ -184,8 +184,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github/InfinitIMO/InfinitIMO/WebSite/Views/Inquiry/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5xdWlyeVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/InfinitIMO/InfinitIMO/WebSite/Views/Property/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/InfinitIMO/InfinitIMO/WebSite/Views/Property/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Github/InfinitIMO/InfinitIMO/WebSite/Views/Shared/Error.cshtml]

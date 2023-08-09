@@ -1,0 +1,40 @@
+﻿@model List<Inquiry>
+
+@{
+    ViewData["Title"] = "Pedidos de contacto";
+}
+
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<br />
+
+@if (Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Mensagem</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var inquiry in Model)
+            {
+                <tr>
+                    <td>@inquiry.Name</td>
+                    <td>@inquiry.Email</td>
+                    <td>@inquiry.Message</td>
+                    <td>@inquiry.Date.ToString("dd/MM/yyyy HH:mm")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhum pedido de contacto encontrado.</p>
+}

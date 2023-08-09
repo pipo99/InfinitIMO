@@ -19,7 +19,7 @@ namespace PropertyService.Services
 
         public async Task<List<Property>> GetPropertiesAsync()
         {
-            return await _context.Properties.ToListAsync();
+            return await _context.Properties.OrderByDescending(p => p.Id).ToListAsync();
         }
 
         public async Task<Property> GetPropertyByIdAsync(int id)

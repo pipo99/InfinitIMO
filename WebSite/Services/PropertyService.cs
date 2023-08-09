@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Text;
 using WebSite.Models;
 
 namespace WebSite.Services
@@ -25,5 +26,34 @@ namespace WebSite.Services
 
             return null;
         }
+        public async Task<Property> GetPropertyByIdAsync(int id)
+        {
+            var response = await _httpClient.GetAsync($"https://localhost:7143/api/Property/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var property = JsonConvert.DeserializeObject<Property>(content);
+                return property;
+            }
+
+            return null;
+        }
+
+        public async Task<bool> Create(Property property)
+        {
+            var serializedProperty = JsonConvert.SerializeObject(property);
+            var content = new StringContent(serializedProperty, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync("https://localhost:7143/api/Property", content);
+
+            if (response.IsSuccessStatusCode)
+                return true;
+            else
+                return false;
+
+            //TODO: Colocar a devolver uma estrutura de response (code; message)
+        }
+
     }
 }

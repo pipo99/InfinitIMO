@@ -21,6 +21,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<PropertyService>();
+builder.Services.AddScoped<InquiryService>();
 
 
 builder.Services.AddRazorPages();
@@ -46,6 +47,17 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+
+app.MapControllerRoute(
+    name: "propertyDetail", 
+    pattern: "Property/Detail/{id}",
+    defaults: new { controller = "Property", action = "Detail" });
+
+app.MapControllerRoute(
+    name: "inquiryList",
+    pattern: "Inquiry/List",
+    defaults: new { controller = "Inquiry", action = "List" });
 
 
 app.MapControllerRoute(

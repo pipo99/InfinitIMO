@@ -16,7 +16,7 @@
             <tr>
                 <td style="width:340px;height:240px"><img src="https://picsum.photos/seed/@Guid.NewGuid()/340/280" alt="Imagem Aleatória" /></td> <!-- Imagem aleatória -->
                 <td>
-                    <span class="property-name">@property.Name</span>
+                    <a href="@Url.Action("Detail", "Property", new { id = property.Id })" class="property-name">@property.Name</a>
                     <span class="property-price">@property.Price<span class="property-price-currency">€</span></span>
                     <span style="display: block;">@property.Type</span>
                     <span style="display: block;">@property.Location</span>
