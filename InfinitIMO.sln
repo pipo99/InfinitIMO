@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService", "UserService\UserService.csproj", "{7490B134-C2F5-4E86-8C80-27DB506AACED}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyService", "PropertyService\PropertyService.csproj", "{6317A288-5689-49B7-AF49-C4960B6B0BEB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InquiryService", "InquiryService\InquiryService.csproj", "{D84B560F-C658-4E7A-AB10-42CE227BD252}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7490B134-C2F5-4E86-8C80-27DB506AACED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7490B134-C2F5-4E86-8C80-27DB506AACED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7490B134-C2F5-4E86-8C80-27DB506AACED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7490B134-C2F5-4E86-8C80-27DB506AACED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6317A288-5689-49B7-AF49-C4960B6B0BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6317A288-5689-49B7-AF49-C4960B6B0BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6317A288-5689-49B7-AF49-C4960B6B0BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
