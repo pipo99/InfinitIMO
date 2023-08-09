@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<InquiryDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
 
-
+builder.Services.AddHttpClient();
 builder.Services.AddScoped<InquiryService.Services.InquiryService>();
 
 

@@ -522,3 +522,5 @@ D:\Github\InfinitIMO\InfinitIMO\InquiryService\obj\Debug\net7.0\refint\InquirySe
 D:\Github\InfinitIMO\InfinitIMO\InquiryService\obj\Debug\net7.0\InquiryService.pdb
 D:\Github\InfinitIMO\InfinitIMO\InquiryService\obj\Debug\net7.0\InquiryService.genruntimeconfig.cache
 D:\Github\InfinitIMO\InfinitIMO\InquiryService\obj\Debug\net7.0\ref\InquiryService.dll
+D:\Github\InfinitIMO\InfinitIMO\InquiryService\bin\Debug\net7.0\Faker.Net.6.0.dll
+D:\Github\InfinitIMO\InfinitIMO\InquiryService\bin\Debug\net7.0\de-DE\Faker.Net.6.0.resources.dll

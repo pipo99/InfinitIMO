@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PropertyService</name>
+    </assembly>
+    <members>
+        <member name="M:PropertyService.Controllers.PropertyController.GetProperties">
+            <summary>
+            Get All
+            </summary>
+            <remarks>
+            This API method returns a list of all available properties.
+            </remarks>
+        </member>
+        <member name="M:PropertyService.Controllers.PropertyController.GetProperty(System.Int32)">
+            <summary>
+            Get By ID
+            </summary>
+            <remarks>
+            This API method returns details of a property based on its ID.
+            </remarks>
+            <param name="id">The ID of the property.</param>
+        </member>
+        <member name="M:PropertyService.Controllers.PropertyController.CreateProperty(PropertyService.Models.Property)">
+            <summary>
+            Create
+            </summary>
+            <remarks>
+            This API method allows creating a new property.
+            </remarks>
+            <param name="property">The information of the new property to be created.</param>
+        </member>
+        <member name="M:PropertyService.Controllers.PropertyController.UpdateProperty(System.Int32,PropertyService.Models.Property)">
+            <summary>
+            Update
+            </summary>
+            <remarks>
+            This API method allows updating information of an existing property based on its ID.
+            </remarks>
+            <param name="id">The ID of the property to be updated.</param>
+            <param name="property">The new information of the property.</param>
+        </member>
+        <member name="M:PropertyService.Controllers.PropertyController.DeleteProperty(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <remarks>
+            This API method allows deleting a property based on its ID.
+            </remarks>
+            <param name="id">The ID of the property to be deleted.</param>
+        </member>
+        <member name="T:PropertyService.Migrations.CreateUserDataModel">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyService.Migrations.CreateUserDataModel.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyService.Migrations.CreateUserDataModel.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyService.Migrations.CreateUserDataModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PropertyService.Models.Property">
+            <summary>
+            Represents a property listing.
+            </summary>
+        </member>
+        <member name="P:PropertyService.Models.Property.Id">
+            <summary>
+            Gets or sets the unique ID of the property.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:PropertyService.Models.Property.Name">
+            <summary>
+            Gets or sets the name of the property.
+            </summary>
+            <example>Moradia a venda em Figueiró dos Vinhos</example>
+        </member>
+        <member name="P:PropertyService.Models.Property.Type">
+            <summary>
+            Gets or sets the type of the property (e.g., residential, commercial).
+            </summary>
+            <example>Moradia T4</example>
+        </member>
+        <member name="P:PropertyService.Models.Property.Location">
+            <summary>
+            Gets or sets the location of the property.
+            </summary>
+            <example>Aguda, Figueiró dos Vinhos</example>
+        </member>
+        <member name="P:PropertyService.Models.Property.Price">
+            <summary>
+            Gets or sets the price of the property.
+            </summary>
+            <example>125000</example>
+        </member>
+        <member name="P:PropertyService.Models.Property.Description">
+            <summary>
+            Gets or sets the description of the property.
+            </summary>
+            <example>Venha conhecer a moradia dos seus sonhos!</example>
+        </member>
+    </members>
+</doc>

@@ -522,3 +522,5 @@ D:\Github\InfinitIMO\InfinitIMO\PropertyService\obj\Debug\net7.0\refint\Property
 D:\Github\InfinitIMO\InfinitIMO\PropertyService\obj\Debug\net7.0\PropertyService.pdb
 D:\Github\InfinitIMO\InfinitIMO\PropertyService\obj\Debug\net7.0\PropertyService.genruntimeconfig.cache
 D:\Github\InfinitIMO\InfinitIMO\PropertyService\obj\Debug\net7.0\ref\PropertyService.dll
+D:\Github\InfinitIMO\InfinitIMO\PropertyService\bin\Debug\net7.0\PropertyService.xml
+D:\Github\InfinitIMO\InfinitIMO\PropertyService\obj\Debug\net7.0\PropertyService.xml

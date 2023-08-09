@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Assets\\Images\\1.jpg"
     },
     {
+      "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\10.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Images\\10.jpg"
+    },
+    {
       "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\2.jpg",
       "PackagePath": "staticwebassets\\Assets\\Images\\2.jpg"
     },
@@ -23,6 +27,26 @@
     {
       "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\5.jpg",
       "PackagePath": "staticwebassets\\Assets\\Images\\5.jpg"
+    },
+    {
+      "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\6.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Images\\6.jpg"
+    },
+    {
+      "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\7.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Images\\7.jpg"
+    },
+    {
+      "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\8.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Images\\8.jpg"
+    },
+    {
+      "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\9.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Images\\9.jpg"
+    },
+    {
+      "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\Assets\\Images\\banner.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Images\\banner.jpg"
     },
     {
       "Id": "D:\\Github\\InfinitIMO\\InfinitIMO\\WebSite\\wwwroot\\css\\site.css",

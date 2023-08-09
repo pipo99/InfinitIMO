@@ -21,16 +21,21 @@
                     "../../Assets/Images/2.jpg",
                     "../../Assets/Images/3.jpg",
                     "../../Assets/Images/4.jpg",
-                    "../../Assets/Images/5.jpg"
+                    "../../Assets/Images/5.jpg",
+                    "../../Assets/Images/6.jpg",
+                    "../../Assets/Images/7.jpg",
+                    "../../Assets/Images/8.jpg",
+                    "../../Assets/Images/9.jpg",
+                    "../../Assets/Images/10.jpg"
                 };
 
                 var randomIndex = new Random().Next(0, imageUrls.Length);
                 var randomImageUrl = imageUrls[randomIndex];
             }
-            <img style="width:340px; height:240px" src="@randomImageUrl" alt="Imagem Aleatória" />
+            <img style="width:500px; height:300px" src="@randomImageUrl" alt="Imagem Aleatória" />
         </div>
-        <div style="margin-left: 20px; display: flex; text-align: right; flex-direction: column; justify-content: space-between;">
-            <form method="post" action="/Inquiry/Create">
+        <div style="margin-left: 20px; display: flex; text-align: right; flex-direction: column; justify-content: space-between;">            
+            <form method="post" action="/Inquiry/Create">                
                 <input type="hidden" name="PropertyID" value="@Model.Id" />
                 <input type="text" name="Name" placeholder="Seu nome" style="width: 60%; margin-bottom: 10px;" />
                 <input type="text" name="Email" placeholder="Seu e-mail" style="width: 60%; margin-bottom: 10px;" />
@@ -44,6 +49,6 @@
         <p><strong>Preço:</strong> @Model.Price €</p>
         <p><strong>Tipo:</strong> @Model.Type</p>
         <p><strong>Localização:</strong> @Model.Location</p>
-        <p><strong>Descrição:</strong> @Model.Description</p>
+        <p><strong>Descrição:</strong> @Html.Raw(@Model.Description)</p>
     </div>
 </div>

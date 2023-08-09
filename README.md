@@ -16,3 +16,11 @@ Project developed using the following technology stack:
 - Usage of .Net Core Identity for Basic user authentication 
 - Usage of Web API
 
+
+
+Backlog items to a future version:
+- Implement JWT Token to increase Microservice security 
+- Unit Tests using NUnit to Ensure Delivery Quality
+
+
+
