@@ -5,7 +5,7 @@
 namespace PropertyService.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateUserDataModel : Migration
+    public partial class CreatePropertyDataModel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

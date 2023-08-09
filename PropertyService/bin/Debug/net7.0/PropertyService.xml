@@ -49,16 +49,16 @@
             </remarks>
             <param name="id">The ID of the property to be deleted.</param>
         </member>
-        <member name="T:PropertyService.Migrations.CreateUserDataModel">
+        <member name="T:PropertyService.Migrations.CreatePropertyDataModel">
             <inheritdoc />
         </member>
-        <member name="M:PropertyService.Migrations.CreateUserDataModel.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:PropertyService.Migrations.CreatePropertyDataModel.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:PropertyService.Migrations.CreateUserDataModel.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:PropertyService.Migrations.CreatePropertyDataModel.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:PropertyService.Migrations.CreateUserDataModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:PropertyService.Migrations.CreatePropertyDataModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
         <member name="T:PropertyService.Models.Property">

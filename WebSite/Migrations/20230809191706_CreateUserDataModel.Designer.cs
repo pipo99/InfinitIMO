@@ -12,8 +12,8 @@ using WebSite.Data;
 namespace WebSite.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230807090313_RemoveFistNameRequired")]
-    partial class RemoveFistNameRequired
+    [Migration("20230809191706_CreateUserDataModel")]
+    partial class CreateUserDataModel
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
