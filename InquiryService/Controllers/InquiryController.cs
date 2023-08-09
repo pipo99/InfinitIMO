@@ -19,6 +19,13 @@ namespace InquiryService.Controllers
             _inquiryService = inquiryService;
         }
 
+        /// <summary>
+        /// Get All
+        /// </summary>
+        /// <remarks>
+        /// This API method returns a list of all available inquiries.
+        /// </remarks>
+        [Produces("application/json")]
         [HttpGet]
         public async Task<ActionResult<List<Inquiry>>> GetInquiries()
         {
@@ -26,6 +33,15 @@ namespace InquiryService.Controllers
             return Ok(properties);
         }
 
+
+        /// <summary>
+        /// Get By ID
+        /// </summary>
+        /// <remarks>
+        /// This API method returns details of an inquiry based on its ID.
+        /// </remarks>
+        /// <param name="id">The ID of the inquiry.</param>
+        [Produces("application/json")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Inquiry>> GetInquiry(int id)
         {
@@ -37,6 +53,15 @@ namespace InquiryService.Controllers
             return Ok(property);
         }
 
+
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <remarks>
+        /// This API method allows creating a new inquiry.
+        /// </remarks>
+        /// <param name="inquiry">The information of the new inquiry to be created.</param>
+        [Produces("application/json")]
         [HttpPost]
         public async Task<ActionResult> CreateInquiry(Inquiry inquiry)
         {

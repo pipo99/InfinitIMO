@@ -524,3 +524,5 @@ D:\Github\InfinitIMO\InfinitIMO\InquiryService\obj\Debug\net7.0\InquiryService.g
 D:\Github\InfinitIMO\InfinitIMO\InquiryService\obj\Debug\net7.0\ref\InquiryService.dll
 D:\Github\InfinitIMO\InfinitIMO\InquiryService\bin\Debug\net7.0\Faker.Net.6.0.dll
 D:\Github\InfinitIMO\InfinitIMO\InquiryService\bin\Debug\net7.0\de-DE\Faker.Net.6.0.resources.dll
+D:\Github\InfinitIMO\InfinitIMO\InquiryService\bin\Debug\net7.0\InquiryService.xml
+D:\Github\InfinitIMO\InfinitIMO\InquiryService\obj\Debug\net7.0\InquiryService.xml

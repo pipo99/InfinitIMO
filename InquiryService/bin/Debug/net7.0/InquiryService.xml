@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InquiryService</name>
+    </assembly>
+    <members>
+        <member name="M:InquiryService.Controllers.InquiryController.GetInquiries">
+            <summary>
+            Get All
+            </summary>
+            <remarks>
+            This API method returns a list of all available inquiries.
+            </remarks>
+        </member>
+        <member name="M:InquiryService.Controllers.InquiryController.GetInquiry(System.Int32)">
+            <summary>
+            Get By ID
+            </summary>
+            <remarks>
+            This API method returns details of an inquiry based on its ID.
+            </remarks>
+            <param name="id">The ID of the inquiry.</param>
+        </member>
+        <member name="M:InquiryService.Controllers.InquiryController.CreateInquiry(InquiryService.Models.Inquiry)">
+            <summary>
+            Create
+            </summary>
+            <remarks>
+            This API method allows creating a new inquiry.
+            </remarks>
+            <param name="inquiry">The information of the new inquiry to be created.</param>
+        </member>
+        <member name="T:InquiryService.Migrations.CreateInquiryDataModel">
+            <inheritdoc />
+        </member>
+        <member name="M:InquiryService.Migrations.CreateInquiryDataModel.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InquiryService.Migrations.CreateInquiryDataModel.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InquiryService.Migrations.CreateInquiryDataModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:InquiryService.Models.Inquiry">
+            <summary>
+            Represents an inquiry related to a property listing.
+            </summary>
+        </member>
+        <member name="P:InquiryService.Models.Inquiry.Id">
+            <summary>
+            Gets or sets the unique ID of the inquiry.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:InquiryService.Models.Inquiry.Date">
+            <summary>
+            Gets or sets the date of the inquiry.
+            </summary>
+            <example>2023-08-09</example>
+        </member>
+        <member name="P:InquiryService.Models.Inquiry.PropertyID">
+            <summary>
+            Gets or sets the ID of the associated property.
+            </summary>
+            <example>123</example>
+        </member>
+        <member name="P:InquiryService.Models.Inquiry.Email">
+            <summary>
+            Gets or sets the email address of the person making the inquiry.
+            </summary>
+            <example>john.doe@example.com</example>
+        </member>
+        <member name="P:InquiryService.Models.Inquiry.Name">
+            <summary>
+            Gets or sets the name of the person making the inquiry.
+            </summary>
+            <example>John Doe</example>
+        </member>
+        <member name="P:InquiryService.Models.Inquiry.Message">
+            <summary>
+            Gets or sets the message or question associated with the inquiry.
+            </summary>
+            <example>I'm interested in this property. Can you provide more details?</example>
+        </member>
+        <member name="T:InquiryService.Models.Property">
+            <summary>
+            Represents a property listing.
+            </summary>
+        </member>
+        <member name="P:InquiryService.Models.Property.Id">
+            <summary>
+            Gets or sets the unique ID of the property.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:InquiryService.Models.Property.Name">
+            <summary>
+            Gets or sets the name of the property.
+            </summary>
+            <example>Moradia a venda em Figueiró dos Vinhos</example>
+        </member>
+        <member name="P:InquiryService.Models.Property.Type">
+            <summary>
+            Gets or sets the type of the property (e.g., residential, commercial).
+            </summary>
+            <example>Moradia T4</example>
+        </member>
+        <member name="P:InquiryService.Models.Property.Location">
+            <summary>
+            Gets or sets the location of the property.
+            </summary>
+            <example>Aguda, Figueiró dos Vinhos</example>
+        </member>
+        <member name="P:InquiryService.Models.Property.Price">
+            <summary>
+            Gets or sets the price of the property.
+            </summary>
+            <example>125000</example>
+        </member>
+        <member name="P:InquiryService.Models.Property.Description">
+            <summary>
+            Gets or sets the description of the property.
+            </summary>
+            <example>Venha conhecer a moradia dos seus sonhos!</example>
+        </member>
+    </members>
+</doc>
