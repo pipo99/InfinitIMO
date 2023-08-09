@@ -1,6 +1,9 @@
 # InfinitIMO
 Real Estate Property Management System
-Portfolio project developed by: Márcio Borges 
+
+Portfolio project developed by: 
+
+Márcio Borges 
 https://www.linkedin.com/in/marcioborges/
 
 
