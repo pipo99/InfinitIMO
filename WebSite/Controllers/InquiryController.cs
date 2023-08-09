@@ -44,11 +44,16 @@ namespace WebSite.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Inquiry inquiry)
         {
-            inquiry.Date = DateTime.Now;
+            if (ModelState.IsValid)
+            {
+                inquiry.Date = DateTime.Now;
 
-            var resCreate = await _inquiryService.Create(inquiry);
+                var resCreate = await _inquiryService.Create(inquiry);
 
-            return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(inquiry);
         }
     }
 }

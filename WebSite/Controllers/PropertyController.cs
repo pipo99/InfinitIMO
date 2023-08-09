@@ -36,9 +36,14 @@ namespace WebSite.Controllers
         [HttpPost]
 		public async Task<IActionResult> Create(Property property)
 		{
-            var resCreate = await _propertyService.Create(property);
+            if (ModelState.IsValid)
+            {
+                var resCreate = await _propertyService.Create(property);
 
-			return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(property);
 		}
 	}
 }

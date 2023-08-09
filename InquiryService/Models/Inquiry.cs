@@ -1,4 +1,6 @@
-﻿namespace InquiryService.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace InquiryService.Models
 {
     /// <summary>
     /// Represents an inquiry related to a property listing.
