@@ -1,0 +1,214 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Property Service",
+    "description": "API InfinitIMO - Property Service",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Property": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Get All",
+        "description": "This API method returns a list of all available properties.",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Property"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Create",
+        "description": "This API method allows creating a new property.",
+        "requestBody": {
+          "description": "The information of the new property to be created.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Property"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Property"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Property"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Property/{id}": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Get By ID",
+        "description": "This API method returns details of a property based on its ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID of the property.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Property"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Update",
+        "description": "This API method allows updating information of an existing property based on its ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID of the property to be updated.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The new information of the property.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Property"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Property"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Property"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Delete",
+        "description": "This API method allows deleting a property based on its ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID of the property to be deleted.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Property": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Gets or sets the unique ID of the property.",
+            "format": "int32",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "description": "Gets or sets the name of the property.",
+            "nullable": true,
+            "example": "Moradia a venda em Figueiró dos Vinhos"
+          },
+          "type": {
+            "type": "string",
+            "description": "Gets or sets the type of the property (e.g., residential, commercial).",
+            "nullable": true,
+            "example": "Moradia T4"
+          },
+          "location": {
+            "type": "string",
+            "description": "Gets or sets the location of the property.",
+            "nullable": true,
+            "example": "Aguda, Figueiró dos Vinhos"
+          },
+          "price": {
+            "type": "number",
+            "description": "Gets or sets the price of the property.",
+            "format": "double",
+            "example": 125000
+          },
+          "description": {
+            "type": "string",
+            "description": "Gets or sets the description of the property.",
+            "nullable": true,
+            "example": "Venha conhecer a moradia dos seus sonhos!"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Represents a property listing."
+      }
+    }
+  }
+}
