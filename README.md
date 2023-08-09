@@ -25,6 +25,7 @@ Project developed using the following technology stack:
 Backlog items to a future version:
 - Implement JWT Token to increase Microservice security 
 - Unit Tests using NUnit to Ensure Delivery Quality
+- Pull request and review
 
 
 
@@ -35,7 +36,7 @@ I decided not to create a service for user management.
 Instead I used .Net Core Identity because for the proposed objective, it meets the requirement and saved a lot of development time.
 Besides, it is always a good practice to use libraries provided by .NET
 
-Regarding the layout, not much focus was given, due to the limited time available. I create a simple and functional layout
+I create a simple and functional layout
 
 
 
@@ -99,7 +100,7 @@ Step 8 - Stop and Run again
 8.1 After change the correct URL of each service please run again the solution
 
 
-
+NOTE: If you are unable to create the databases through the migrations, I attach 3 backups of the databases so that you can restore them
 
 *************************************************************************************************************************************************
 *****************************										POST MAN COLLECTION								*****************************

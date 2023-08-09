@@ -1,28 +1,28 @@
 ﻿@page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Acesso reservado";
+    ViewData["Title"] = "Nova conta";
 }
 
-<h1>@ViewData["Title"]</h1>
-
-<div class="row">
+<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="col-md-4">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Criar um novo acesso</h2>
+            <span style="font-size: 19px;">Por favor indique os dados para criar conta</span>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-floating">
+            <div class="form-floating" style="padding-bottom: 10px;">
                 <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
                 <label asp-for="Input.Email"></label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <div class="form-floating">
+            <div class="form-floating" style="padding-bottom: 10px;">
                 <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
                 <label asp-for="Input.Password"></label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
-            <div class="form-floating">
+            <div class="form-floating" style="padding-bottom: 40px;">
                 <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
                 <label asp-for="Input.ConfirmPassword"></label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
