@@ -9,11 +9,25 @@
 </div>
 
 <br />
+ 
 
 <div class="property-details">
     <div style="display: flex; align-items: center;">
         <div style="flex: 1;">
-            <img src="https://picsum.photos/seed/@Guid.NewGuid()/340/280" style="display: block; margin: 0;" />
+            @{
+                string[] imageUrls = new string[]
+                {
+                    "../../Assets/Images/1.jpg",
+                    "../../Assets/Images/2.jpg",
+                    "../../Assets/Images/3.jpg",
+                    "../../Assets/Images/4.jpg",
+                    "../../Assets/Images/5.jpg"
+                };
+
+                var randomIndex = new Random().Next(0, imageUrls.Length);
+                var randomImageUrl = imageUrls[randomIndex];
+            }
+            <img style="width:340px; height:240px" src="@randomImageUrl" alt="Imagem Aleatória" />
         </div>
         <div style="margin-left: 20px; display: flex; text-align: right; flex-direction: column; justify-content: space-between;">
             <form method="post" action="/Inquiry/Create">
@@ -33,4 +47,3 @@
         <p><strong>Descrição:</strong> @Model.Description</p>
     </div>
 </div>
-  

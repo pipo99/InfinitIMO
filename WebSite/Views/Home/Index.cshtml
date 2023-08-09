@@ -5,24 +5,51 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">InfinitIMO</h1>
-    <p>Real Estate Property Management System</p>
+    <h1>@ViewData["Title"]</h1>
 </div>
+
 <br />
-<table class="table">    
-    <tbody>
-        @foreach (var property in Model)
-        {
-            <tr>
-                <td style="width:340px;height:240px"><img src="https://picsum.photos/seed/@Guid.NewGuid()/340/280" alt="Imagem Aleatória" /></td> <!-- Imagem aleatória -->
-                <td>
-                    <a href="@Url.Action("Detail", "Property", new { id = property.Id })" class="property-name">@property.Name</a>
-                    <span class="property-price">@property.Price<span class="property-price-currency">€</span></span>
-                    <span style="display: block;">@property.Type</span>
-                    <span style="display: block;">@property.Location</span>
-                    <span style="display: block;">@property.Description</span>
-                </td>                                
-            </tr>
-        }
-    </tbody>
-</table>
+
+@if (Model.Count > 0)
+{
+    <table class="table">
+         
+        <tbody>
+            @{
+                // Array de URLs das imagens
+                string[] imageUrls = new string[]
+                {
+                    "Assets/Images/1.jpg",
+                    "Assets/Images/2.jpg",
+                    "Assets/Images/3.jpg",
+                    "Assets/Images/4.jpg",
+                    "Assets/Images/5.jpg"
+                };
+            }
+
+            @foreach (var property in Model)
+            {
+                <tr>
+                    <td style="width: 340px; height: 240px">
+                        @{
+                            var randomIndex = new Random().Next(0, imageUrls.Length);
+                            var randomImageUrl = imageUrls[randomIndex];
+                        }
+                        <img style="width:340px; height:240px" src="@randomImageUrl" alt="Imagem Aleatória" />
+                    </td>
+                    <td style="padding-left: 40px">
+                        <a href="@Url.Action("Detail", "Property", new { id = property.Id })" class="property-name">@property.Name</a>
+                        <span class="property-price">@property.Price<span class="property-price-currency">€</span></span>
+                        <span style="display: block; margin-bottom: 10px;">@property.Type</span>
+                        <span style="display: block; margin-bottom: 10px;">@property.Location</span>
+                        <span style="display: block; margin-bottom: 10px;">@property.Description</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhuma propriedade encontrada.</p>
+}
