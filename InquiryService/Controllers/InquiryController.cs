@@ -29,8 +29,8 @@ namespace InquiryService.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Inquiry>>> GetInquiries()
         {
-            var properties = await _inquiryService.GetInquiriesAsync();
-            return Ok(properties);
+            var inquiries = await _inquiryService.GetInquiriesAsync();
+            return Ok(inquiries);
         }
 
 
@@ -45,12 +45,12 @@ namespace InquiryService.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Inquiry>> GetInquiry(int id)
         {
-            var property = await _inquiryService.GetInquiryByIdAsync(id);
-            if (property == null)
+            var inquiry = await _inquiryService.GetInquiryByIdAsync(id);
+            if (inquiry == null)
             {
                 return NotFound();
             }
-            return Ok(property);
+            return Ok(inquiry);
         }
 
 
