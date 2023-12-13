@@ -21,6 +21,7 @@ Project developed using the following technology stack:
 - Design and implementation of Microservices
 - Usage of .Net Core Identity for Basic user authentication 
 - Usage of Web API
+- Using Faker .Net Library to Generate massive amounts of fake
 
 Backlog items to a future version:
 - Implement JWT Token to increase Microservice security 
